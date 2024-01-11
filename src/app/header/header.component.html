@@ -1,0 +1,43 @@
+<div class="header">
+    <!-- alt text example #1 -->
+    <img class="logo" src="https://veterans.rutgers.edu/themes/custom/at/rutgers-logo.svg" alt="Rutgers logo" />
+    
+    <nav class="main-nav">
+      <ul class="nav-list" aria-label="main navigation">
+        <!-- href="https://veterans.rutgers.edu/about-us/our-mission" tabindex example #2 -->
+        <li><a >Our Mission</a></li>
+        <li><a href="#activities">Activities & Events</a></li>
+        <li>
+             <!-- list example #3 -->
+            <button mat-button [matMenuTriggerFor]="veteransMenu" class="vetBtn">Veterans House</button>
+            <!-- Veterans House Dropdown Menu -->
+            <mat-menu #veteransMenu="matMenu">
+                <!-- Are these tabindexes needed? -->
+              <button mat-menu-item>
+                <a tabindex="0" class="dropDownItems" href="#">About Rutgers Veterans</a>
+              </button>
+              <button mat-menu-item>
+                <a tabindex="0" class="dropDownItems" href="#">Resources</a>
+              </button>
+              <button mat-menu-item>
+                <a class="dropDownItems" >Virtual Vet House</a>
+              </button>
+            </mat-menu>
+        </li>
+
+      <li>
+        <a href="https://studentveterans.org/" class="submenu-toggle" aria-expanded="false">National SVA</a>
+      </li>
+
+      <li>
+        <a href="#social">Social Media</a>
+        <ul class="submenu">
+          <li><a href="https://www.facebook.com/rutgerssva/">Facebook</a></li>
+          <li><a href="https://www.instagram.com/ru_vets/">Instagram</a></li>
+        </ul>
+      </li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="https://veterans.rutgers.edu/">Donate</a></li>
+    </ul>
+</nav>
+</div>

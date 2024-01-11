@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Logo */
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Main Navigation */
+  .main-nav {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  /* Submenu Styles */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .submenu li {
+    padding: 16px;
+    list-style: none;
+  }
+  
+  .submenu.show {
+    display: block;
+  }
+
+  :host {
+    display: block;
+    position: relative;
+  }
+
+.vetBtn {
+    font-family: Arial, sans-serif;
+    color: white !important;
+}
+
+.vetBtn:focus, a:focus {
+    outline: 2px solid white;
+}
+
+.dropDownItems {
+    color: rgba(0, 0, 0, 0.7) !important;
+    font-size: 85%;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+
+  .mat-mdc-menu-item:not([disabled]):focus {
+    background-color: grey !important;
+}
+
+
+ 
+  
+  
+  
+  

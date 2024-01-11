@@ -1,0 +1,103 @@
+/* display activity blocks*/
+
+/* reset defaults */
+* {
+    margin-top: 0px;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .addBackground{
+    background-color: #13293e;
+  }
+  
+  .info > .info-box {
+    display: inline-block;
+    width: 50%;
+    height: 600px;
+    margin-right: -4px;
+    padding: 200px 32px 16px 16px;
+    vertical-align: top;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-decoration: none;
+    position: relative;
+    transition: background-size ease-in-out 1s;
+  }
+  
+  .info > .info-box:hover {
+    background-size: auto 140%;
+    transition: background-size ease-in-out 1s;
+  }
+  .info > .info-box:focus {
+    background-size: auto 140%;
+    transition: background-size ease-in-out 1s;
+    outline: 3px solid yellow;
+    outline-offset: 2px;
+    z-index: 10001;
+  }
+  
+  
+  .info > .info-box > span,
+  .info > .info-box > div
+  {
+    display: block;
+    margin: 16px;
+    color: white;
+  }
+  
+  .info > .info-box > span:first-child {
+    font-size: 200%;
+    font-family: sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .info > .info-box > span:nth-child(2) {
+    font-size: 120%;
+  }
+  
+  .info > .info-box > .button {
+    display: inline-block;
+    padding: 32px;  
+    border: 3px solid black;
+    background-color: white;
+    overflow: hidden;
+    font-size: 120%;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: absolute;
+    bottom: 48px;
+    left: 10px;
+    width: 200px !important;
+  }
+  
+  .info > .info-box:nth-child(2) > .button {
+    padding: 44px 10px;
+  }
+  
+  
+  .info > .info-box:nth-of-type(1) {
+  background-image: url("https://getnave.com/blog/wp-content/uploads/2018/05/kanban-meetings.jpg");
+  }
+  .info > .info-box:nth-of-type(2) {
+    background-image: url("https://t4.ftcdn.net/jpg/06/71/35/73/360_F_671357357_cnmgEfGy6wNOQEDYOEg5w9SgceEAOVyf.jpg");
+  }
+  .info > .info-box:nth-of-type(3) {
+    background-image: url("https://scarletknights.com/images/2020/9/30/BlackRBig.png?width=1000");  
+    background-size: 100%;
+  }
+  .info > .info-box:nth-of-type(4) {
+    background-image: url("https://gps.uml.edu/images/2020/veterans-bg-flip.jpg");
+  }
+  
+  @media (max-width: 960px) {
+    .info > .info-box {
+      width: 100%;
+      background-size: 200% auto;
+    }
+    .info > .info-box:hover {
+      background-size: 220% auto;
+    }
+  }
